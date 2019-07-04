@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GUEST BOOK</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body background="kuis.jpg">
+ 
+   <div class="container">		
+   <div align="center"><strong><font color="red"face="algerian" size="100">FORM PEMBAYARAN </font></strong></div><br>
+<form action="proses.php" method="post" enctype="multipart/form-data">
+  <table>
+  <div class="form-group">
+      <tr>
+        <td align="right" ><label for="nama" ><font color="blue">Nama Pelanggan:</font></label></td>
+        <td><input type="text" name="nama" class="form-control" id="nama"></td>
+      </tr>
+  </div>
+
+  <div class="form-group">
+    <tr>
+      <td align="right"><label for="alamat"><font color="blue">Nama Barang :</font></label></td>
+      <td><input type="text" name="nama_barang" class="form-control" id="alamat"></td>
+    </tr>
+  </div>
+  <div class="form-group">
+    <tr>
+      <td align="right"><label for="alamat"><font color="blue">Jumlah :</font></label></td>
+      <td><input type="text" name="jumlah" class="form-control" id="alamat"></td>
+    </tr>
+  </div>
+  <div class="form-group">
+    <tr>
+      <td align="right"><label for="alamat"><font color="blue">Harga Satuan :</font></label></td>
+      <td><input type="text" name="harga" class="form-control" id="alamat"></td>
+    </tr>
+  </div>
+  <div class="form-group">
+    <tr>
+      <td align="right"><label for="alamat"><font color="blue">Bukti Transaksi :</font></label></td>
+      <td><input type="file" name="file"></td>
+    </tr>
+  </div>
+</td>
+</tr>
+</table>
+  <br>
+    <button type="submit" name="Submit" class="btn btn-primary">Submit</button>
+    <button type="reset" name="Submit2" class="btn btn-danger">Reset</button>
+</form>
+   </div>
+ 
+</body>
+</html>

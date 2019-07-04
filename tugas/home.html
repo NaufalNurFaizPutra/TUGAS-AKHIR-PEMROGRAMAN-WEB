@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas Pemrograman Web</title>
+	<!-- Style Css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Style Javascript -->
+	<script language="javascript" src="js/js1.js"></script>
+</head>
+<style type="text/css">
+.menu3{
+	margin-top: 200px;
+}
+</style>
+<body>
+
+<div class="header">
+	<br><br>
+	<center>
+
+</div>
+	<div class="menubar">
+		<ul>
+			<li><font color="black" size="4"><a href="home.html"><b>Home</b></a></li></font>
+			<li><font color="black" size="4"><a href="index.html"><b>Biodata</b></a></li></font>
+			<li><font color="black" size="4"><a href="materi.html"><b>Keterangan</a></b></li></font>
+			<li><font color="black" size="4"><a href="cari.html"><b>Pencarian</b></a></li></font>
+			<li><font color="black" size="4"><a href="bukuu.html"><b> Proses</b></a></li></font>
+			<li><font color="black" size="4"><a href="lihat.php"><b>Lihat Data</b></a></li></font>
+			<li>
+		</ul>
+</div>	
+
+<div class="menu2">
+	<br><br>
+	<center>
+<h1 style="font-size: 60px; font-family: verdana; float: right; color: white;" id="jam"></h1>
+</center>
+
+	<br><br>
+	<center>
+	<h2><font color="blue"><h1>SELAMAT DATANG DI WEBSITE KAMI</h1></font></h2></center>
+	<hr width="90%">	
+	<tr><center>
+	<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspGambar Pembuat Website:</td></p>
+	<td align="center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a target="_blank" href="img/NAUFAL.jpg"></td>
+	<td align="center"><img src="img/NAUFAL.jpg" width="250" height="350"></td>
+	<td align="center"><p>Naufal Nur Faiz Putra</p></td>
+	<td align="center"><p>1800018039</p></a></td>
+	<hr width="100%">
+	<font color="blue" size="15"><p>Silahkan berkunjung di website ini !!</font></p>
+		</center>
+	<br>
+	</tr>
+
+</div>
+
+<div class="footer">
+	<br>
+<form name="formcari" onSubmit="cari()">
+  	<input class="search" name="keyword" type="text" placeholder="Cari..." required>	
+  	<input class="button" type="submit" value="Cari" onclick="sayHello()">
+	</form><button onclick="document.getElementById('demo').innerHTML=Date()">Waktu saat ini?</button>
+	<p id="demo"></p>
+
+<script type="text/javascript">
+ window.onload = function() { jam(); }
+
+ function jam() {
+  var e = document.getElementById('jam'),
+  d = new Date(), h, m, s;
+  h = d.getHours();
+  m = set(d.getMinutes());
+  s = set(d.getSeconds());
+
+  e.innerHTML = h +':'+ m +':'+ s;
+
+  setTimeout('jam()', 1000);
+ }
+
+ function set(e) {
+  e = e < 10 ? '0'+ e : e;
+  return e;
+ }
+</script>
+</head>
+<body>
+
+</div>
+	
+
+</body>
+</html>

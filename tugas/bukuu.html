@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas Pemrograman Web</title>
+	<!-- Style Css -->
+	<link rel="stylesheet" type="text/css" href="css/style3.css">
+	<!-- Style Javascript -->
+	<script language="javascript" src="js/javascript.js"></script>
+</head>
+<body>
+
+<div class="header">
+	<br><br>
+	<center>
+	<font color="black"size="10">BENGKEL ROG ( REPUBLIK OF GELAGAHSARI )</font><br><br></center>
+
+</div>
+	<div class="menubar">
+		<ul>
+			<li><a href="home.html"><b>Home</b></a></li>
+			<li><a href="index.html"><b>Biodata</b></a></li>
+			<li><a href="materi.html"><b>Keterangan</a></b></li>
+			<li><a href="cari.html"><b>Pencarian</b></a></li>
+			<li><a href="bukuu.html"><b> Proses</b></a></li>
+			<li><a href="lihat.php"><b>Lihat Data</b></a></li>
+		</ul>
+</div>	
+
+
+<div class="menu2">
+	 <div class="container">		
+   <div align="center"><strong><font color="red"face="algerian" size="100">FORM PEMBAYARAN </font></strong></div><br>
+<form action="proses.php" method="post" enctype="multipart/form-data">
+  <table>
+  <div class="form-group">
+      <tr>
+        <td align="right" ><label for="nama" ><font color="blue" size="6">Nama Pelanggan:</font></label></td>
+        <td><input type="text" name="nama" class="form-control" id="nama"></td>
+      </tr>
+  </div>
+
+  <div class="form-group">
+    <tr>
+      <td align="right"><label for="alamat"><font color="blue" size="6">Nama Barang :</font></label></td>
+      <td><input type="text" name="nama_barang" class="form-control" id="alamat"></td>
+    </tr>
+  </div>
+  <div class="form-group">
+    <tr>
+      <td align="right"><label for="alamat"><font color="blue" size="6">Jumlah :</font></label></td>
+      <td><input type="text" name="jumlah" class="form-control" id="alamat"></td>
+    </tr>
+  </div>
+  <div class="form-group">
+    <tr>
+      <td align="right"><label for="alamat"><font color="blue" size="6">Harga Satuan :</font></label></td>
+      <td><input type="text" name="harga" class="form-control" id="alamat"></td>
+    </tr>
+  </div>
+  <div class="form-group">
+    <tr>
+      <td align="right"><label for="alamat"><font color="blue" size="6">Bukti Transaksi :</font></label></td>
+      <td><input type="file" name="file"></td>
+    </tr>
+  </div>
+</td>
+</tr>
+</table>
+<br>
+ <button type="submit" name="Submit" class="btn btn-primary">Submit</button>
+    <button type="reset" name="Submit2" class="btn btn-danger">Reset</button>
+</form>
+	
+</div>
+<br><br><br><br><br><br><br><br>
+
+<div class="footer">
+	<br>
+		<font color="#FF0000"><b>&copy</b></font>&nbsp Naufal Nur Faiz Putra - Universitas Ahmad Dahlan - Yogyakarta - <font color="#FF0000"><b>2019</b></font>
+</div>
+</body>
+</html>
